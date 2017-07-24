@@ -11,6 +11,12 @@
     <script>
         let ajax = new XMLHttpRequest();
 
+
+        ajax.onreadystatechange = function() {
+
+            console.log(ajax.response);
+        };
+
         ajax.open('GET', 'fichier.txt', true);
         ajax.send();
     </script>
